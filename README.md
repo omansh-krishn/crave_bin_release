@@ -6,9 +6,25 @@ Crave looks for a `crave.conf` configuration file in the current working directo
 
 ## Installation
 
-The latest stable version of `crave` can be download from the [crave GitHub](https://github.com/accupara/crave/releases) page. Pick the binary for your platform. For Windows users, download and unzip the contents into a folder.    
-For Mac: `brew install --cask accupara/crave/crave`
-
+The latest stable version of `crave` can be download from the [crave GitHub](https://github.com/accupara/crave/releases) page. Pick the binary for your platform. 
+- For Windows users
+  - Download and unzip the contents into a folder.
+  
+  or
+  - Install `crave` using [scoop](https://scoop.sh)
+  ```
+  scoop bucket add crave https://github.com/accupara/scoop
+  scoop install crave
+  ```
+  - To update crave using scoop:
+  ```
+  scoop update crave
+  ```
+- For Mac:
+  ```
+  brew install --cask accupara/crave/crave`
+  ```
+  
 Alternatively, your administrator approved version of crave can be downloaded from the "Downloads" page in the Crave UI.
 
 When running crave, you might be asked to give permissions to a program called `chisel`. Please allow this program to run and accept connections.

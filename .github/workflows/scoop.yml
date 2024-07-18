@@ -1,0 +1,18 @@
+name: Scoop Bucket
+
+on:
+  push:
+    tags:
+      - '*'
+  workflow_dispatch:
+
+  trigger-workflow:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Trigger repository dispatch event
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.scoop_repo_dspt }}
+          repository: accupara/scoop
+          event-type: new-release
